@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff;
+    padding: 2em;
+    width: 250px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo img {
+    width: 150px;
+    margin-bottom: 2em;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-bottom: 1em;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1em;
+    display: block;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2em;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #00796b;
+}
+
+.stats-overview {
+    display: flex;
+    gap: 2em;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h2 {
+    font-size: 1.2em;
+    color: #00796b;
+    margin-bottom: 0.5em;
+}
+
+.stat-card p {
+    font-size: 2.5em;
+    color: #004d40;
+}
+
+.detailed-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.stat-small-card {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: calc(25% - 1.5em);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-small-card h3 {
+    font-size: 1.1em;
+    color: #00796b;
+    margin-bottom: 0.5em;
+}
+
+.stat-small-card p {
+    font-size: 1.8em;
+    color: #004d40;
+}
+
+.company-profile {
+    margin-top: 2em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.company-profile h3 {
+    color: #00796b;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #004d40;
+    color: white;
+    margin-top: 2em;
+}

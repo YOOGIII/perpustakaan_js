@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Es Krim Lucu</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <style>
+        .blur-background {
+            position: relative;
+            background: url('background_image_url.jpg') no-repeat center center/cover;
+            filter: blur(8px);
+            height: 100vh;
+            z-index: -1;
+        }
+        .main-image-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .main-image {
+            max-width: 300px;
+            filter: brightness(1.2) contrast(1.1);
+            margin: 20px auto;
+            display: block;
+        }
+        .topping-decor, .strawberry-decor {
+            position: absolute;
+        }
+        .topping-decor {
+            top: -20px;
+            left: 50px;
+            width: 50px;
+        }
+        .strawberry-decor {
+            bottom: -20px;
+            right: 20px;
+            width: 40px;
+        }
+        .background-gradient {
+            background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+            padding: 40px;
+        }
+        .cute-text {
+            font-size: 2rem;
+            color: #FF6F61;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-background">
+        <div class="background-gradient">
+            <div class="main-image-container">
+                <!-- Gambar Utama -->
+                <img src="image_url_di_sini.png" alt="Es Krim Imut" class="main-image">
+                <img src="topping_image_url.png" class="topping-decor" alt="Topping">
+                <img src="strawberry_image_url.png" class="strawberry-decor" alt="Strawberry">
+                <p class="cute-text">Yummy!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
